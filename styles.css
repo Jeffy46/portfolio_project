@@ -1,34 +1,118 @@
-body{
-    margin:0px;
-}
-nav{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:10px;
-    background-color: black;
-}
-.header-logo{
-    width: 500px;
-    height: auto;
-}
-.left-links ul{
+
+/* verticcal setup */
+body {
+    background-color: rgb(202, 213, 227);
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    
+}
+/* header content */
+nav {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    list-style-type: none;
-    gap:20px;
+    max-width: 800px; 
+    width: 100%;
 }
-.left-links a{
-    text-decoration:none;
-    color:white;
-    font-family: serif;
-    font-size: 20px;
+.header-logo {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
 }
-.left-links a:hover{
-    text-decoration:underline;
+.links {
+    width: 100%;
+    
 }
-.main-content{
+.links ul {
     display: flex;
-    background-color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    border-radius: 20px;
+    background-color: rgb(123, 159, 207);
+    gap: 30px;
+    max-width: 800px; 
+    width: 100%;
+    margin:0px;
+    padding:0px;
 }
+.links a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 40px;
+    border-radius: 20px;
+    padding:0px 10px;
+}
+.links a:hover{
+    background-color: rgb(76, 147, 240);
+
+}
+/* promotional banner */
+.banner-container {
+    text-align: center;
+    background-image: url("images/background_banner.png");
+    background-size: cover;
+    border-radius: 30px;
+    max-width: 800px; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+.banner-container p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    max-width: 100%;
+    font-weight:bold;
+}
+/* informational mini banners */
+.info-container{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    max-width: 800px;
+}
+.info-banner{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    background-color: rgb(123, 159, 207);
+    border-radius: 20px;
+    padding:10px 20px;
+    margin: 0px;
+    text-align: center;
+    font-size:12px;
+    
+}
+.info-banner img{
+    width: 100%;
+    height: auto;
+}
+.info-banner h1:hover{
+    background-color: rgb(76, 147, 240);
+}
+
+.info-banner ul{
+    list-style-type: none;
+    margin:0px;
+    padding: 0px;
+}
+/* footer */
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:800px;
+}
+hr{
+    border-color: black;
+    width:800px;
+    margin: 0px;
+}
+.footer-logo{
+    height: 30px;
+    width: auto;
+}
+
