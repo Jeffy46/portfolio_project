@@ -1,12 +1,34 @@
+body{
+    margin: 0px;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    background-color: rgb(202, 213, 227);
+}
 
+
+/* snow gif */
+.snow-gif{
+   margin:0px;
+   padding:0px;
+   width: 500px;
+   height: 600px;
+}
+.snow-gif img{
+    width: 100%;
+    height: 100%;
+}
 /* verticcal setup */
-body {
+main {
     background-color: rgb(202, 213, 227);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:20px;
-    
+    gap:15px;
+    height:100vh;
 }
 /* header content */
 nav {
@@ -21,6 +43,8 @@ nav {
     width: 100%;
     max-width: 800px;
     height: auto;
+    background-image: url("images/snow.gif");
+
 }
 .links {
     width: 100%;
@@ -91,7 +115,7 @@ nav {
     height: auto;
 }
 .info-banner h1:hover{
-    background-color: rgb(76, 147, 240);
+    text-decoration: underline;
 }
 
 .info-banner ul{
