@@ -2,11 +2,13 @@
 /* vertical alignment */
 body{
     margin: 0px;
-    padding:0px;
+    background-color: rgb(202, 213, 227);
+}
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
     gap:15px;
     background-color: rgb(202, 213, 227);
 }
