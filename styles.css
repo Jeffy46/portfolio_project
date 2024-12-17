@@ -108,14 +108,22 @@ nav {
     width: 100%;
     height: auto;
 }
-.info-banner h1:hover{
-    text-decoration: underline;
-}
+
 .info-banner ul{
     list-style-type: none;
     margin:0px;
     padding: 0px;
 }
+
+.info-banner a{
+    text-decoration: none;
+    color: white;
+}
+.info-banner a:hover {
+    border:solid white 1px;
+    border-radius: 20px;
+}
+
 /* footer */
 .footer-container{
     display: flex;
